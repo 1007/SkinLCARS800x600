@@ -1,0 +1,1408 @@
+
+
+@font-face {
+	font-family: lcars_font;
+	src: url('font/LCARS.eot');/* EOT  for IE */
+}
+@font-face {
+	font-family: lcars_font;
+  	src: url('font/LCARS.ttf');
+}
+												
+body	{
+	background:rgba(0,0,0,1);        /* hier auf weissen Hintergrund schalten mit 0oder 255 */
+   color:#fff;
+   font-family:lcars_font;
+   font-size:25px;
+   margin:0;
+   overflow:hidden;
+   padding:0;
+   /* -webkit-tap-highlight-color:rgba(0,0,0,0); wird in Ueberpruefung angemeckert ????? */
+   border: red 0px solid;
+}
+.scrollLeft {
+	display: none;
+}
+.scrollRight {
+	display: none;
+}
+
+[class^='ipsIcon']	{
+	font-size: 24px;
+}
+[class*='ipsIcon'] {
+	font-size: 24px;
+}
+.td {
+    display: block !important;
+    float: left;
+}
+.tr {
+    display: block !important;
+    float: left;
+}
+.td .enum{
+    min-width: 70px;
+}
+.td .text {
+    min-width: 70px;
+}
+
+.tr div {
+    height: 40px;
+    margin-top: -10px;
+}
+.tr div.icon {
+    margin-top: -6px;
+}
+
+
+/*******************************************************************************
+  .ipsContentChanger
+
+*******************************************************************************/
+.ipsContentChanger
+	{
+	background-color: rgba(0,0,0,1);
+	margin: 5px;
+	border-radius: 40px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(153, 204, 255, 1);
+	padding: 0px;
+	}
+
+/*******************************************************************************/
+
+/*******************************************************************************
+  .ipsScheduleDialog ( Wochenplaene )
+
+*******************************************************************************/
+.ipsDialog.ipsEventDialog > .ipsScheduleDialog {
+    height: 620px;
+
+    /*height: 420px;*/
+    /*width: 680px;*/
+    margin-top: -210px;
+    width: 980px;
+    border-color: antiquewhite;
+    border-radius: 30px;
+    border-width: 6px;
+    }
+
+
+.ipsCategory > .container {
+    border: 0 none;
+
+    background: none transparent;
+}
+
+.ipsCategory > .container .childContainers{
+    border: 0 none;
+    background: none transparent;
+}
+
+.ipsCategory > .container .childContainers > div {
+    border: 0 none;
+    overflow: visible;
+}
+
+.ipsCategory > .container .content .link {
+    height: 20px;
+    width: auto; /* für überlange button-reihen, 120px,  min-width für An/Aus: 85px */
+    float: right;
+    margin-top: 0;
+    background-color: #336699;
+    float: right;
+    width: 40px;
+
+}
+
+/* Graphensymbol ausblenden */
+.ipsCategory > .container .content .link > .ipsIconGraph {
+display: none; /* nicht anzeigen*/
+    font-size: 32px;
+    height: 40px;
+    margin-top: -10px;
+    padding: 2px;
+    border-left: 4px solid rgba(0,0,0,1);
+    border-right: 4px solid rgba(0,0,0,1);
+}
+
+/* Graphensymbol ausblenden */
+.ipsCategory > .container .content .rightSide > .graphLink {
+display: none;
+}
+
+/* custom */
+.ipsCategory > .container .content .title {
+    border-left: 4px solid rgba(0,0,0,1);
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+.ipsCategory > .container .content .visual {
+    height: 20px;
+    width: auto; /* für überlange button-reihen, 120px,  min-width für An/Aus: 85px */
+    float: right;
+    margin-top: 0;
+    margin-right: 12px;
+    font-size: 22px;
+
+}
+
+.ipsCategory > .container .content .visual > .chartLink{
+    margin-top: -10px;
+}
+
+.ipsCategory > .container .content .visual > .enum {
+    width: 100%;
+    height: 100%;
+}
+.ipsCategory > .container .content .visual > .enum > div{
+    height: 40px;
+    margin-top: -9px;
+    font-size: 32px;
+    line-height: 40px;
+    background-image: none;
+    /*background-color: rgba(94,94,94,0.8);*/
+	background-color: rgba(0,0,0,1);
+
+}
+
+.ipsCategory > .container .content .visual > .enum > div:first-child {
+    border-right: 4px solid rgba(0,0,0,1);
+}
+
+.ipsCategory > .container .content .visual > .enum > .selected{
+    background-color: rgba(153, 204, 255, 1);
+    color: rgba(0,0,0,1);
+}
+
+/* IPSCam */
+.ipsCategory > .container .content .visual > .keyboardLink{
+    margin-top: -10px;
+}
+
+.ipsCategory > .container .content .visual > .runLink {
+    margin-top: -10px;
+}
+.ipsCategory > .container .content .link > .runLink {
+    margin-top: -10px;
+}
+
+.ipsCategory > .container .content .visual > .selector > .selected {
+    background-color: rgba(153, 204, 255, 1);
+    color: rgba(0,0,0,1);
+    margin-left: 0px;
+	margin-right: -3px;
+}
+
+.ipsCategory > .container .content .visual > .selector > div {
+    height: 40px;
+    margin-top: -3px;
+    font-size: 38px;
+    line-height: 40px;
+    background-image: none;
+    background-color: rgba(0,0,0,1);
+    /*background-color: rgba(94,94,94,0.8);*/
+
+}
+
+/* IP-Symcon override */
+.ipsCategory > .container .content .visual > .text {
+    line-height: normal;
+    background: none repeat scroll 0 0 rgba(0,0,0,1);
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 40px;
+    margin-top: -10px;
+    padding: 2px;
+    font-size: 30px;
+}
+
+.ipsCategory > .container .content .visual > .text.colored {
+    background-image: none;
+    padding: 0 0;
+    line-height: 40px;
+}
+/*
+.ipsCategory > .container .content .visual > .text.colored {
+    line-height: 40px;
+}
+*/
+
+.ipsCategory > .container .content .visual > .timerLink{
+    margin-top: -10px;
+}
+
+.ipsCategory > .container .content .visual .throbber {
+    margin-top: -10px;
+}
+
+/* Neu wegen 'Schatten' in HTMLBox         */
+.ipsCategory > .container .extended {
+    position: relative;
+    margin: 50px 10px 10px;
+}
+
+.ipsCategory > .container .extended > .htmlBox {
+    border: 0 none;
+    overflow: visible;
+}
+
+.ipsCategory > .container .extended > .mailBox {
+    border: 0 none;
+    overflow: visible;
+    float: left;
+    font-size: 35px;
+}
+
+.ipsCategory > .container .extended > .media {
+    border: 0 none;
+    background: none transparent;
+}
+.ipsCategory > .container .extended > .textBox {
+    border: 0 none;
+    overflow: visible;
+}
+.ipsCategory > .container .extended > .textBox > div {
+    background-image: none;
+    background-color: rgba(94,94,94,0.8);
+    line-height: 40px;
+}
+
+.ipsCategory > .container .throbber {
+    width: 28px;
+}
+
+.ipsCategory > .ipsContainer > .childContainers > .container .content .visual > .enum > div {
+    /*margin-top: -3px;*/
+    min-width: 50px;
+}
+
+
+.ipsCategory > .container .content .visual > .slider > div > .background {
+    height: 38px;
+    left: 0px;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    background-color: rgba(0,0,0,1);
+    color: #FFFFFF;
+}
+
+.ipsCategory > .container .content .visual > .slider > div > .bar {
+    background-color: rgba(255, 255, 255, 0.3);
+	/*
+    background-image: -moz-linear-gradient(center top , transparent 0px, rgba(0, 0, 0, 0.33) 4px, rgba(0, 0, 0, 0.33) 12px);
+	?? wird angemeckert ????
+	*/
+    border-color: rgba(255, 255, 255, 0.1);
+    border-style: solid;
+    border-width: 1px 0px;
+    height: 40px;
+    left: 0px;
+    position: absolute;
+    top: 1px;
+    width: 0px;
+}
+
+.ipsCategory > .container .content .visual > .slider {
+    padding: 0px;
+    margin: 0px;
+    height: 36px;
+    max-width: 446px;
+    min-width: 250px;
+    position: relative;
+    width: 100%;
+}
+
+.ipsCategory > .container .content .visual > .slider > div > .text {
+
+    color: #FFFFFF;
+}
+/*******************************************************************************/
+
+.ipsWebFront {
+    top: 40px;          /* Original 26px */
+    height:529px;
+    background: rgba(0,0,0,1);
+}
+
+
+.ipsWebFront:after {
+    content: '';
+    display: block;
+    background: url('src/LineBottom800x600.png') no-repeat;
+    width: 100%;
+    height: 28px;
+    margin: 0 6px 0 0;
+    background-color: #6699ff;
+    background-position: 0 0;
+    position: absolute;
+    bottom: -30px;
+   
+}
+
+.ipsWebFront:before{
+   content: '';
+   display: block;
+   background: url('src/LineTop800x600.png') no-repeat;
+   width: 100%;
+   height: 38px;
+   margin: -39px 6px -3px 0;
+   background-color: #6699ff;
+	background-position: 0px 0px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	
+}
+
+.ipsWebFront .ipsContainer .content .ipsContainer .navigation:before {
+    content: '';
+    display: block;
+    background: url('src/Line2.png') no-repeat;
+    width: 100%;
+    height: 26px;
+    margin: -28px 6px -3px 0;
+    background-color: #6699ff;
+    background-position: 0 -31px;
+    margin-top: 0;
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 0px;
+	border-bottom-right-radius: 70px;
+	border-top-right-radius: 38px;
+	border-color: #000;
+
+}
+
+/* ???
+.ipsWebFront .ipsContainer .content .ipsContainer .navigation:after {
+    content: '';
+    display: block;
+    background: url('src/Line4.png') ;
+
+    background-position:left bottom;
+    width: 130px;
+    height: 26px;
+    margin: 0px 0px 0px 0;
+    background-color: #6699ff;
+
+    margin-top: 0;
+}
+
+*/
+
+
+.ipsWebFront .ipsContainer .content .ipsContainer .ipsContainer .content .ipsContainer .ipsContainer .tr {
+    background-color: #336699;
+    border: medium none;
+    color: rgba(0,0,0,1);
+    display: block;
+    font-size: 18px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    overflow: hidden;
+    text-align: right;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 91%;
+}
+
+/*******************************************************************************/
+
+
+.ipsTabPane > .content
+    {
+    top:31px;
+    left: 130px;
+    bottom:5px;
+    right:5px;       /* Abstand rechts vom Bildschirm Problem mit line.jpg */
+
+    background-image: none;
+    }
+
+.ipsTabPane>.content.exclusive
+          {
+          top:0;
+          left: 0px;
+          }
+
+.ipsTabPane > .navigation
+    {
+    height: 96%;
+    background-image: none;
+    background-color: rgba(0,0,0,1);
+    border-bottom: 0;
+    top: 2px;
+    float: left;
+    font-family: lcars_font;
+    }
+
+.ipsTabPane > .navigation > .scroll
+    {
+    height: 100%;
+    padding: 0 0;
+    overflow: visible;
+
+    background: none repeat scroll 0px 0px rgba(30, 50, 71, 1);
+    width:120px;
+    margin-top: 0px;
+
+	border-width: 5px;
+	border-color: #9CF;
+	/*background-color: #000;*/
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+
+    }
+
+.ipsTabPane > .navigation > .scroll > .buttons {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: rgba(0,0,0,1);
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    height: 100%;
+}
+
+.ipsTabPane > .navigation > .scroll > .buttons.subHidden > div:first-child {
+    border-bottom: 2px solid rgba(0,0,0,1);
+    border-top: 2px solid rgba(0,0,0,1);
+}
+
+.ipsTabPane > .navigation > .scroll > .buttons > div {
+    border-bottom: 2px solid rgba(0,0,0,1);
+
+    display: block;
+    border-left: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+    height: 73px;
+    background-color: #6699ff;
+    color: rgba(0,0,0,1);
+    font-family: lcars_font;
+    font-size: 32px;
+    text-decoration: none;
+    opacity: 1;
+}
+.ipsTabPane > .navigation > .scroll > .buttons > div.active {
+    border-color: rgba(0,0,0,1);
+    background-color: rgba(153, 204, 255, 1);
+    border-bottom: 2px solid;
+/*
+	 width:142px;
+	 border-right: 12px solid rgba(0,0,0,1);
+	 z-index:20;
+*/
+}
+
+
+.ipsTabPane > .navigation > .scroll > .buttons > div > .icon {
+    float: right;
+}
+
+
+
+.ipsTabPane > .navigation > .scroll > .buttons > div > .title {
+    float: right;
+    text-transform: uppercase;
+    display: block;
+    width: 120px;
+    margin: 40px 5px 0px 0px;
+    height: 30px;
+
+	/*
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+	*/
+
+}
+
+.ipsTabPane > .navigation > .sub
+    {
+    display: none;
+    }
+
+/* Schriftart und Groesse der Widget ( Uhrzeit/Info ) */
+.ipsTabPane > .navigation > .widgets {
+   margin-top:-40px;
+	height: 40px;
+	padding: 0px 0px;
+}
+.ipsTabPane>.navigation>.widgets>div>.title
+	{
+   display:inline-block;
+   float:left;
+   margin-left:0px;
+   margin-right:120px;
+
+	background-color: #000000;
+   font-family: lcars_font;
+   font-size: 25px;
+   
+   width: 170px;
+   text-align: left;
+
+   color: rgba(255,255,255,1);
+	line-height: 34px;
+	height: 32px;
+
+	padding-left: 10px;
+
+	}
+/*******************************************************************************/
+
+/*******************************************************************************
+  .ipsSplitPane
+
+  .ipsSplitPane
+  .ipsSplitPane.border > .top,
+  .ipsSplitPane.border > .left
+  .ipsSplitPane.border > .bottom
+  .ipsSplitPane.border > .right
+
+*******************************************************************************/
+.ipsSplitPane {
+    overflow: hidden;
+}
+
+.ipsSplitPane.border > .top{
+    /*border: 0 none;*/
+    border: 0px solid #00002A;
+}
+.ipsSplitPane.border > .left{
+    /*border: 0 none;*/
+    border: 0px solid #00002A;
+}
+.ipsSplitPane.border > .bottom{
+    /*border: 0 none;*/
+    border: 0px solid #00002A;
+}
+.ipsSplitPane.border > .right {
+    /*border: 0 none;*/
+    border: 0px solid #00002A;
+}
+
+
+.ipsSplitPane.border {
+
+    border-radius: 30px;
+    border-style: hidden;
+    background-color: #1F3247;
+}
+
+/*******************************************************************************
+  .ipsDWDReport
+
+  .ipsDWDReport .title
+  .ipsDWDReport .text
+  .ipsDWDReport .updated
+
+*******************************************************************************/
+.ipsDWDReport .title {
+    font-family: lcars_font;
+    font-size: 32px;
+}
+.ipsDWDReport .text {
+    font-size: 30px;
+}
+.ipsDWDReport .updated {
+    font-size: 30px;
+}
+.ipsDWDReport {
+	left: 55%;
+}
+.ipsDWDImage {
+	width: 180%;
+	}
+/*******************************************************************************
+	.ipsInfoWidget > .title
+*******************************************************************************/
+.ipsInfoWidget>.title
+          {
+          height:32px;
+          max-width:1250px;
+          overflow:hidden;
+          min-width: 500px;
+
+          }
+/*******************************************************************************/
+
+/*******************************************************************************
+	.ColorChanger
+*******************************************************************************/
+.colorChanger {
+/*    margin: 0px;*/
+    max-width: 446px;
+    min-width: 99px;
+    width: 100%;
+    background-color: rgba(0,0,0,1);
+    top: -9px;
+}
+
+.colorChanger > .sliders {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    width: 300px;
+}
+
+.colorChanger > .sliders > div {
+	height: 13px;
+	margin: 0px 40px 2px 5px;
+	top: 6px;
+}
+
+.colorChanger > .color {
+	top : 0px;
+
+	}
+.colorChanger > .sliders > div > .text {
+	display: none;
+ }
+
+/*******************************************************************************
+	ab hier CSS fuer eigenen Webseiten
+*******************************************************************************/
+
+
+/*******************************************************************************
+	Start Abfallkalender
+*******************************************************************************/
+.Abfallkalender
+  {
+  width:100%;
+  /*height:100%;*/
+
+  border-style:solid;
+  border-width:0px;
+  border-radius: 30px;
+  /*border-collapse: separate; */
+  /*border-spacing: 12px 12px 12px 12px; */
+  border-collapse:separate;
+  border-spacing:0px 10px;
+
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  border-color: rgba(153, 204, 255, 1);
+  /*border-color: #828282;*/
+
+  background: rgba(0,0,0,1);
+  /*background-color : transparent;*/
+  /*
+  margin-top:5px;
+  margin-left:5px;
+  margin-bottom:5px;
+  margin-right: 5px;
+  */
+  font-size:25px;
+  }
+.AbfallkalenderText
+  {
+  height:32px;
+  }
+.AbfallkalenderIcon
+  {
+  height:70px;
+  }
+.AbfallkalenderTD
+  {
+  height:85px;
+  background: #336699;
+  padding-left:15px;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 40px;
+
+  }
+.AbfallkalenderTDIcon
+  {
+  height:35px;
+  background: rgba(0,0,0,1);
+  }
+.AbfallkalenderIcon
+  {
+  height:35px;
+  background: rgba(0,0,0,1);
+  }
+
+/*******************************************************************************
+	Ende Abfallkalender
+*******************************************************************************/
+
+
+/*******************************************************************************
+	Start iSpy
+*******************************************************************************/
+.iSpy
+  {
+  width:100%;
+  /*height:100%;*/
+
+  border-style:solid;
+  border-width:12px;
+  border-radius: 30px;
+  /*border-collapse: separate; */
+  /*border-spacing: 12px 12px 12px 12px; */
+  border-collapse:separate;
+  border-spacing:0px 10px;
+
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  border-color: rgba(153, 204, 255, 1);
+  /*border-color: #828282;*/
+
+  background: rgba(0,0,0,1);
+  /*background-color : transparent;*/
+  /*
+  margin-top:5px;
+  margin-left:5px;
+  margin-bottom:5px;
+  margin-right: 5px;
+  */
+  font-size:40px;
+  }
+
+
+.iSpyTD {
+	color: #FFFFFF;
+   font-family:lcars_font;
+   font-size: 25pt;
+	background: #336699;
+/*
+   border: solid 1px gray;
+
+   border-spacing: 90px;
+   border-radius: 6px;*/
+	padding-left:10px
+	}
+
+
+
+.iSpysmallfont {
+
+         color: #FFFFFF;
+        font-family:arial;
+        font-size: 12pt;
+
+          /*border: solid 1px gray;*/
+          /*border-spacing: 9px;*/
+          /*border-radius: 6px;*/
+
+}
+
+.iSpyblockbody {
+         color: #FFFFFF;
+        font-family:arial;
+        font-size: 12pt;
+
+          border: solid 1px gray;
+          border-spacing: 9px;
+          border-radius: 6px;
+
+         }
+.iSpyuser {
+         color: #FFFFFF;
+        font-family:arial;
+        font-size: 12pt;
+
+          border: solid 1px gray;
+          border-spacing: 9px;
+          border-radius: 6px;
+
+         }
+.iSpyforum {
+         color: #FFFFFF;
+        font-family:arial;
+        font-size: 12pt;
+
+          border: solid 1px gray;
+          border-spacing: 9px;
+          border-radius: 6px;
+
+         }
+.iSpytitel {
+        color: #FFFFFF;
+
+        font-family:lcars_font;
+        font-size: 25pt;
+        width: 100%;
+         /*border: solid 1px gray;*/
+			line-height: 22px;
+		line-height: 27px;
+	background: #336699;
+
+        	padding-left:10px
+
+      }
+
+
+.iSpysubtitel {
+        color: #FFFFFF;
+     	font-family:lcars_font;
+        font-size: 20pt;
+	padding-left:10px;
+line-height: 22px;
+/*border: solid 1px gray;*/
+
+         }
+.iSpytitelmain {
+         color: #FFFFFF;
+
+        font-family:arial;
+        font-size: 15pt;
+
+          border: solid 1px gray;
+          border-spacing: 9px;
+          border-radius: 6px;
+
+         }
+
+
+
+/*******************************************************************************
+	Ende iSpy
+*******************************************************************************/
+
+/*******************************************************************************
+	Beginn Duftsteuerung
+*******************************************************************************/
+#DuftLCARSUbersicht
+	{
+	position:absolute;
+    width:1000px;
+    height:850px;
+    z-index:1;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #333333;
+	}
+#DuftLCARSUbersicht img
+	{
+    /*float: right;*/
+    position: relative;
+    top: 35px;
+	}
+#DuftLCARSLevel
+	{
+	position:absolute;
+
+   width:80px;
+   height:150px;
+   z-index:2;
+   left: 0px;
+   top: 0px;
+
+	border-radius: 5px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: #333333;
+
+   text-align: center;
+	font-family:arial;
+   font-size: 20pt;
+
+	}
+
+#DuftLCARSLevel img
+	{
+    /*float: right;*/
+    position: relative;
+    top: 5px;
+	}
+/*******************************************************************************
+	Ende Duft
+*******************************************************************************/
+
+/*******************************************************************************
+	Beginn PIRI
+*******************************************************************************/
+#PIRILCARSUbersicht
+	{
+	position:absolute;
+    width:1000px;
+    height:800px;
+    z-index:1;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FF0000;
+	}
+#PIRILCARSPosition
+	{
+	position:absolute;
+
+   width:80px;
+   height:150px;
+   z-index:2;
+   left: 0px;
+   top: 0px;
+
+	border-radius: 5px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: #333333;
+
+   text-align: center;
+	font-family:arial;
+   font-size: 20pt;
+
+	}
+
+#PIRILCARSLogText
+	{
+
+   font-size: 25pt;
+
+	}
+
+/*******************************************************************************
+	Ende PIRI
+*******************************************************************************/
+
+
+/*******************************************************************************
+	Beginn FS20 Uebersicht
+*******************************************************************************/
+#FS20LCARSUbersicht
+	{
+	position:relative;
+	width:1620px;
+	height:800px;
+   z-index:1;
+   border-radius: 30px;
+   border-style: solid;
+   border-width: 0px;
+   border-color: rgba(153, 204, 255, 1);
+   background-color: rgba(0,0,0,1);
+    /*margin: 0px auto;*/
+/*	top: 50%;   */
+/*	left: 50%; */
+/*	margin-top: -400px;*/
+/*	margin-left: -810px;*/
+
+	}
+#FS20LCARSTitelLeft
+	{
+	position: relative;
+	float: left;
+   margin-top: 0px;
+   margin-left:0px;
+	margin-bottom: 15px;
+
+/*   width:480px;*/
+	width:770px;
+   height:46px;
+   z-index:2;
+   left: 10px;
+   top: 15px;
+
+   background-color: #336699;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   vertical-align: middle;
+	/*display:table-cell;*/
+	}
+#FS20LCARSTitelSpalte2
+	{
+	position: relative;
+	float: left;
+   margin-top: 0px;
+   margin-left:20px;
+   width:770px;
+   height:46px;
+   z-index:2;
+   top: 15px;
+   background-color: #336699;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+#FS20LCARSTitelSpalte3
+	{
+	position: relative;
+	float: left;
+   margin-top: 0px;
+   margin-left:10px;
+	width:770px;
+   height:46px;
+   z-index:2;
+   top: 15px;
+   background-color: #336699;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+
+#FS20LCARSTitelSpalte4
+	{
+	position: relative;
+	float: left;
+   margin-top: 0px;
+   margin-left:10px;
+   width:770px;
+   height:46px;
+   z-index:2;
+   top: 15px;
+   background-color: #336699;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+
+
+#FS20LCARSTitelSpalte5
+	{
+	position: relative;
+	float: left;
+ 
+   margin-top: 0px;
+   margin-left:10px;
+   width:770px;
+   
+   height:46px;
+   z-index:2;
+   top: 15px;
+   background-color: #336699;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+#FS20LCARSTitelSpalteError
+	{
+	position: relative;
+	float: left;
+   margin-top: 0px;
+   margin-left:10px;
+   width:770px;
+   height:46px;
+   z-index:2;
+   top: 15px;
+   background-color: #336699;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+
+#FS20LCARSLineLeft
+	{
+	position: relative;
+	float: left;
+   width:770px;
+   height:46px;
+   z-index:2;
+   margin-top: 10px;
+   margin-left:50px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+#FS20LCARSLineSpalte2
+	{
+	position: relative;
+	float: left;
+   width:770px;
+   height:46px;
+   z-index:2;
+   margin-top: 10px;
+   margin-left:10px;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+#FS20LCARSLineSpalte3
+	{
+	position: relative;
+	float: left;
+   width:770px;
+   height:46px;
+   z-index:2;
+   margin-top: 10px;
+   margin-left:10px;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+  
+	}
+#FS20LCARSLineSpalte4
+	{
+	position: relative;
+	float: left;
+   width:770px;
+   height:46px;
+   z-index:2;
+   margin-top: 10px;
+   margin-left:10px;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+#FS20LCARSLineSpalteImages
+	{
+	position: relative;
+	float: left;
+   width:770px;
+   height:46px;
+   z-index:2;
+   margin-top: 10px;
+   margin-left:10px;
+   border-style: none;
+	}
+
+#FS20LCARSLineSpalte7
+	{
+	position: relative;
+	float: left;
+   width:770px;
+   height:46px;
+   z-index:2;
+   margin-top: 10px;
+   margin-left:10px;
+   border-style: none;
+   font-family:lcars_font;
+	font-size: 25pt;
+   text-align: center;
+   
+	}
+
+.iFS20Uebersicht
+  {
+  width:100%;
+  /*height:100%;*/
+
+  border-style:solid;
+  border-width:0px;
+  border-radius: 30px;
+  /*border-collapse: separate; */
+  /*border-spacing: 12px 12px 12px 12px; */
+  border-collapse:separate;
+  border-spacing:0px 5px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  border-color: rgba(153, 204, 255, 1);
+  /*border-color: #828282;*/
+
+  background: rgba(0,0,0,1);
+  /*background-color : transparent;*/
+  /*
+  margin-top:5px;
+  margin-left:5px;
+  margin-bottom:5px;
+  margin-right: 5px;
+  */
+  font-size:25px;
+  }
+
+
+.iFS20titelmain {
+   		color: #FFFFFF;
+
+        	font-family:arial;
+        	font-size: 25pt;
+  			border-collapse:separate;
+  			border-spacing:0px 5px;
+			border-color: rgba(153, 204, 255, 1);
+  border-style:solid;
+  border-width:8px;
+
+          border-radius: 30px;
+
+         }
+.iFS20titelname {
+         color: #FFFFFF;
+
+        font-family:arial;
+        font-size: 25pt;
+			text-align: left;
+          border: solid 1px gray;
+          border-spacing: 0px;
+
+
+         }
+.iFS20titeltime {
+         color: #FFFFFF;
+
+        	font-family:arial;
+        	font-size: 25pt;
+			text-align: center;
+         border: solid 1px gray;
+         border-spacing: 0px;
+            	}
+
+
+.iFS20countertag {
+         color: #FFFFFF;
+
+        	font-family:arial;
+        	font-size: 20pt;
+			text-align: center;
+         border: solid 1px gray;
+         border-spacing: 0px;
+         }
+
+.iFS20counterstunden {
+         color: #FFFFFF;
+
+        	font-family:arial;
+        	font-size: 20pt;
+			text-align: center;
+         border: solid 1px gray;
+         border-spacing: 0px;
+         }
+
+.iFS20titelbatterie {
+          border: solid 1px gray;
+          border-spacing: 0px;
+         }
+.iFS20titelerror {
+          border: solid 1px gray;
+          border-spacing: 0px;
+
+         }
+/*******************************************************************************
+	Ende FS20 Uebersicht
+*******************************************************************************/
+
+/*******************************************************************************
+	Beginn Stundenplan ( Wecker )
+*******************************************************************************/
+.stundenplan {
+         color: #FFFFFF;
+         background: #003366;
+			font-family:lcars_font;
+        	/*font-family:arial;*/
+        	font-size: 25pt;
+
+      	border: solid 5px;
+      	border-color: rgba(153, 204, 255, 1);
+         border-spacing: 9px;
+         border-radius: 12px;
+
+         }
+
+/*******************************************************************************
+	Beginn IPSLogger
+*******************************************************************************/
+.row-highlight {
+
+	/*font-size: 11pt !important;*/
+	overflow: hidden ;
+	text-overflow:ellipsis;
+	}
+	
+/*******************************************************************************
+	Beginn Fritzbox Uebersicht
+*******************************************************************************/
+.iFritzboxUebersicht
+  {
+  width:100%;
+  /*height:100%;*/
+
+  border-style:solid;
+  border-width:4px;
+  border-radius: 20px;
+  /*border-collapse: separate; */
+  /*border-spacing: 12px 12px 12px 12px; */
+  border-collapse:separate;
+  border-spacing:0px 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  border-color: rgba(153, 204, 255, 1);
+  /*border-color: #828282;*/
+
+  background: #000000;
+  /*background-color : transparent;*/
+  /*
+  margin-top:5px;
+  margin-left:5px;
+  margin-bottom:5px;
+  margin-right: 5px;
+  */
+  font-size:25px;
+  }
+
+/*******************************************************************************
+	Beginn Roomba
+*******************************************************************************/
+.iRoombaLogging
+  {
+  width:100%;
+  border-style:solid;
+  border-width:8px;
+  border-radius: 30px;
+  border-collapse:separate;
+  border-spacing:0px 2px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+  border-color: rgba(153, 204, 255, 1);
+
+  background: rgba(0,0,0,1);
+  font-size:25px;
+  }
