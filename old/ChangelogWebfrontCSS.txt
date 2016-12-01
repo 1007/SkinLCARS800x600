@@ -1,0 +1,20 @@
+@font-face {
+  font-family: lcars_font;
+  src: url('font/LCARS.eot');   /* EOT file for IE */
+}
+@font-face {
+  font-family: lcars_font;
+  src: url('font/LCARS.ttf');
+}
+
+blau  - #336699 anstatt orange- #FF9900
+
+Breite von 87px auf 120px
+.ipsTabPane > .navigation > .scroll {
+    background: none repeat scroll 0 0 #336699;
+    width:87px;
+}
+
+width: 120px;
+
+
